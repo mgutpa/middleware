@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.ttsl.editgui</groupId>
 	<artifactId>middleware</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>middleware</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -47,8 +47,18 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
-		</dependency>
+			</dependency>
+	
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/mgutpa/maven-repo</url>
+		</repository>
+	</distributionManagement>
+
 
 	<build>
 		<plugins>
